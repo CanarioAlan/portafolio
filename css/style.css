@@ -1,3 +1,133 @@
-:root{
-    --Fprincipal:font-family: 'Vollkorn', serif;
+:root {
+  --CNegro: #000000;
+  --CBlanco: #ffffff;
+  --CPrincipal: #2c3333;
+  --CSecundario: #395b64;
+  --CTerciario: #a5c9ca;
+  --CCuarto: #e7f6f2;
+
+  /* fuentes */ /*font-family:*/
+  --Fprincipal: "Vollkorn", serif; /*400-500-600*/
+  --Fsecundario: "Quicksand", sans-serif; /*500 - 600 - 700*/
+}
+/* generales */
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 98%;
+  font-size: 16px;
+  background-color: var(--CPrincipal);
+  font-family: var(--Fsecundario);
+  margin: 0 auto;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  align-items: center;
+}
+.name-logo {
+  font-family: var(--Fprincipal);
+  font-size: 2.5rem;
+  color: var(--CTerciario);
+}
+.navegacion {
+  width: 55rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.btn-nav {
+  display: inline-block;
+  color: var(--CCuarto);
+  font-weight: 600;
+  padding: 0.8rem;
+  font-size: 1.6rem;
+}
+.btn-nav:hover {
+  color: var(--CCuarto);
+  -webkit-text-stroke: 1px var(--CTerciario);
+  transition: 0.5s;
+}
+/* intruduccion */
+.introduccion {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nombre-principal {
+  font-family: var(--Fprincipal);
+  font-size: 4.5rem;
+  color: var(--CTerciario);
+  display: inline;
+}
+.mi-resumen {
+  width: 70rem;
+  color: var(--CNegro);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+.enlaces-rapidos {
+  width: 45rem;
+  margin-top: 1.7rem;
+}
+.btn-rapidos {
+  color: var(--CCuarto);
+  font-weight: 600;
+  font-size: 2rem;
+  padding: 1rem;
+  border: 1px solid var(--CNegro);
+  border-radius: 1rem;
+}
+.btn-rapidos:hover {
+  background-color: var(--CSecundario);
+  transition: 0.5s;
+}
+.img-mia {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50% 50% / 40% 100%;
+  background-color: var(--CSecundario);
+  background-image: url(../img/ilustracio.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* sobre mi  */
+.sobre-mi {
+  margin-top: 5rem;
+  width: 110rem;
+  height: 30rem;
+  background-color: var(--CSecundario);
+  border-radius: 20px 20px 100px;
+}
+.sobre-mi-title {
+  font-family: var(--Fprincipal);
+  font-weight: 400;
+  font-size: 4rem;
+  color: var(--CTerciario);
+  margin-left: 5rem;
+  padding-top: 2.5rem;
+}
+.sobre-mi-info {
+  width: 85rem;
+  line-height: 2.5rem;
+  margin-left: 3.5rem;
+  margin-top: 5rem;
+  margin-left: 20rem;
+}
+.sobre-mi span {
+  display: none;
 }
