@@ -131,3 +131,69 @@ a {
 .sobre-mi span {
   display: none;
 }
+/* skils */
+.skils {
+  height: 25rem;
+  margin: 2rem 0;
+  padding: 4.5rem;
+  box-shadow: 5px 5px 15px var(--CBlanco);
+  border-radius: 2rem;
+}
+.sub-titles {
+  text-align: center;
+  font-family: var(--Fsecundario);
+  font-weight: 500;
+  font-size: 3.5rem;
+  filter: drop-shadow(1px 1px 15px var(--CSecundario))
+    drop-shadow(1px 1px 15px var(--CTerciario));
+  color: var(--CTerciario);
+}
+.hr-divisor {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+  margin: 3.5rem 0;
+}
+.skils-target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.target {
+  text-align: center;
+  margin-left: 1rem;
+  filter: grayscale(1);
+}
+.target:hover {
+  transform: scale(1.2);
+  filter: none;
+}
+.skils img {
+  width: 5rem;
+}
+.hobies {
+  margin: 5rem 0;
+}
+.hobies h2 {
+  text-align: center;
+  font-family: var(--Fsecundario);
+  font-size: 3.5rem;
+  filter: drop-shadow(1px 1px 15px var(--CBlanco))
+    drop-shadow(1px 1px 15px var(--CTerciario));
+  color: var(--CTerciario);
+  margin: 2rem 0;
+}
+.hobbies-target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
